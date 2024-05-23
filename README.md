@@ -1,5 +1,5 @@
-# amazon_recommendation_system_bda
-The semester project of the Big Data Analytics course taught by Dr. Kifayat Ullah Khan and Mr. Humayoun Mustafa Mazhar.
+The repository of the semester project of the Fundamentals of Big Data Analytics course taught by Dr. Kifayat Ullah Khan and Mr. Humayoun Mustafa Mazhar.
+An amazing project which contributed to our learning and development, massively. Take a look at the execution, in this repository. Thank you for your time :) 
 
 # BDA Project: amazon.com product recommendation system
 
