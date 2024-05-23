@@ -1,59 +1,152 @@
-The repository of the semester project of the Fundamentals of Big Data Analytics course taught by Dr. Kifayat Ullah Khan and Mr. Humayoun Mustafa Mazhar.
-An amazing project which contributed to our learning and development, massively. Take a look at the execution, in this repository. Thank you for your time :) 
+The repository of the semester project of the Fundamentals of Big Data Analytics course taught by Dr. Kifayat Ullah Khan and Mr. Humayoun Mustafa Mazhar. An amazing project which contributed to our learning and development, massively. Take a look at the execution, in this repository. Thank you for your time :)
 
-# BDA Project: amazon.com product recommendation system
+# Amazon.com Product Recommendation System
 
-## Team Members
-- Yahya Qureshi
-- Maaz Khaled
-- Eman Tahir
+## Project Overview
+
+**Project Name:** Amazon.com Product Recommendation System  
+**Project Date:** March 2022  
+**Team Members:** Maaz Khaled, Yahya Qureshi, Eman Tahir
 
 ## Introduction
-This project is divided into three major parts:
-1. Model Training
-2. Flask Setup and Connection to Frontend and Backend
-3. Kafka Producer and Consumer for Real-Time Recommendations
+
+This project aimed to develop a sophisticated recommendation system for Amazon.com, leveraging big data technologies and machine learning algorithms. The project was divided into three major parts:
+1. **Model Training**
+2. **Flask Setup and Connection to Frontend and Backend**
+3. **Kafka Producer and Consumer for Real-Time Recommendations**
 
 ## 1. Model Training
-The first part of the project involved selecting and training a machine learning algorithm to predict user preferences based on their past behaviors. For this, we chose the Alternating Least Squares (ALS) algorithm, which is particularly well-suited for customer order data due to its ability to handle large, sparse datasets effectively and generate high-quality recommendations.
+
+### Algorithm Selection
+
+For this project, we selected the Alternating Least Squares (ALS) algorithm, a collaborative filtering technique particularly well-suited for handling large, sparse datasets like customer order data.
 
 ### Why ALS?
-ALS is a collaborative filtering technique that factors the user-item interaction matrix into two low-rank matrices, representing user preferences and item features. It alternates between fixing the user matrix and solving for the item matrix and vice versa, minimizing the reconstruction error at each step. This approach is ideal for:
-- Handling large datasets with many missing values.
-- Providing personalized recommendations based on user behavior.
-- Scaling well with increasing data size, making it suitable for real-time applications.
 
-### Key Steps:
-- **Algorithm Selection**: ALS was chosen for its robustness in handling large-scale recommendation tasks.
-- **Data Preparation**: Cleaning and pre-processing the dataset to ensure high-quality inputs.
-- **Model Training**: Training the ALS model on user interaction data to predict preferences accurately.
+- **Scalability:** Handles large datasets efficiently.
+- **Accuracy:** Provides high-quality personalized recommendations by factoring the user-item interaction matrix into two low-rank matrices.
+- **Suitability:** Ideal for customer order data due to its robustness and scalability.
+
+### Data Preparation
+
+- **Dataset:** Amazon Review Data (2018) - 233.1 million records, 128GB.
+- **Data Cleaning:** Implemented extensive data cleaning and pre-processing to ensure the quality of inputs.
+
+### Model Training
+
+- **Process:** Trained the ALS model on user interaction data, including clicks, cart additions, and purchases, to accurately predict user preferences.
 
 ## 2. Flask Setup and Connection to Frontend and Backend
-The second part of the project involved setting up a Flask web application framework and establishing connections between the frontend and backend using RESTful API endpoints.
 
-### Key Steps:
-- **Frontend Development**: Using HTML and CSS to design a user-friendly interface.
-- **Backend Integration**: Developing backend services with Python and connecting them using Flask.
-- **API Development**: Creating RESTful API endpoints to handle requests and responses efficiently.
+### Frontend Development
 
-## 3. Kafka Producer and Consumer for Real-Time Recommendations
-The final part of the project focused on implementing Kafka producer and consumer to stream real-time recommendations based on user preferences.
+- **Technologies Used:** HTML, CSS
+- **Design:** Developed a user-friendly interface for seamless interaction.
 
-### Key Steps:
-- **Kafka Setup**: Setting up Kafka producer and consumer for data streaming.
-- **Real-Time Data Processing**: Collecting user behavior data through the producer and processing it to generate recommendations.
-- **Recommendation Delivery**: Sending personalized recommendations to the frontend via Flask.
+### Backend Integration
 
-## Member Contributions
-- **Yahya Qureshi**: Responsible for training the machine learning model used to generate user recommendations.
-- **Maaz Khaled & Eman Tahir**: Set up the Flask application, connected the server to the frontend interface, and developed the Kafka producer and consumer for real-time recommendation streaming.
+- **Technologies Used:** Python, Flask
+- **API Development:** Created RESTful API endpoints to handle requests and responses efficiently.
 
-## Appendix A: Data Upload to MongoDB
+## Data Upload to MongoDB
+
 To enhance our recommendation system, we attempted to integrate detailed product information from the Amazon API. Due to the requirement for a seller account, this integration was put on hold. Instead, we uploaded our data to MongoDB for better management and accessibility, despite facing several technical challenges.
 
-### Lessons Learned:
-- **Complexity of Real-World Data**: Handling and processing large, complex datasets requires significant time and effort.
-- **Importance of Preparation**: Allocating sufficient time for data management tasks is crucial for project success.
+## 3. Kafka Producer and Consumer for Real-Time Recommendations
+
+### Real-Time Data Processing
+
+- **Setup:** Implemented Kafka producer and consumer for real-time data streaming.
+- **Data Collection:** Producer collected user behavior data and pushed it to a Kafka topic.
+- **Data Processing:** Consumer processed the data from the Kafka topic and generated personalized recommendations.
+
+### Recommendation Delivery
+
+- **Integration:** Recommendations were sent back to the frontend via Flask.
+
+## Member Contributions
+
+- **Maaz Khaled & Eman Tahir:** Set up the Flask application, connected the server to the frontend interface, and developed the Kafka producer and consumer for real-time recommendation streaming.
+- **Yahya Qureshi:** Responsible for training the machine learning model used to generate user recommendations.
+
+
+### Lessons Learned
+
+- **Complexity of Real-World Data:** Handling and processing large, complex datasets requires significant time and effort.
+- **Importance of Preparation:** Allocating sufficient time for data management tasks is crucial for project success.
 
 ## Conclusion
+
 Despite challenges, we successfully built a robust recommendation system combining ALS and Content-Based Filtering. This project provided valuable insights into handling advanced features and real-world data complexities, which will guide our future endeavors.
+
+---
+
+## Project Impact
+
+### Complexity and Impact
+
+This project required extensive technical expertise and strategic planning to handle a large-scale dataset and integrate multiple technologies seamlessly. The successful implementation of this recommendation system underscores our ability to manage complex projects, innovate with advanced algorithms, and deliver solutions that drive substantial business value.
+
+### Skills Highlighted
+
+- **Big Data Management:** Demonstrated proficiency in handling and processing vast amounts of data using PySpark and MongoDB.
+- **Machine Learning and Algorithms:** Showcased the ability to design and implement advanced recommendation algorithms, such as LSH, to enhance product suggestions.
+- **Real-time Processing:** Leveraged Apache Kafka to build a real-time data streaming and processing pipeline, ensuring timely and relevant recommendations.
+- **Data Analysis:** Applied comprehensive EDA to derive meaningful insights, aiding in improving the recommendation system and benefiting product owners.
+
+### Impact
+
+By undertaking this project, we have proven our technical prowess and dedication to excellence. Our work on the Amazon.com Product Recommendation System reflects our capability to deliver impactful solutions, our readiness to take on challenging tasks, and our enthusiasm for continuous learning and innovation in the tech field.
+
+---
+
+## How to Use This Project
+
+### Prerequisites
+
+- Python 3.7+
+- MongoDB
+- Apache Kafka
+- PySpark
+- Flask
+
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-repository-url
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+3. **Start MongoDB:**
+   Follow MongoDB installation and start-up guides specific to your operating system.
+
+4. **Start Kafka:**
+   Follow Kafka installation and start-up guides specific to your operating system.
+
+5. **Run the bash file to start the app and it's dependencies:**
+   ```sh
+   ./startproj.sh
+   ```
+
+### Running the Project
+
+1. **Data Upload:**
+   Upload your dataset to MongoDB following the scripts provided in the `data_upload` directory.
+
+2. **Model Training:**
+   Train the ALS model using the provided scripts in the `model_training` directory.
+
+3. **Kafka Setup:**
+   Set up Kafka producer and consumer using the scripts in the `kafka` directory.
+
+4. **Start the Web App:**
+   Run the Flask application and access the frontend via `http://localhost:5000`.
+
+---
+
+This README provides a comprehensive overview of your project, including technical details, impact, and instructions for future employers and collaborators.
