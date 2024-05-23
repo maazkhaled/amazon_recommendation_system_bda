@@ -4,9 +4,8 @@ The repository of the semester project of the Fundamentals of Big Data Analytics
 
 ## Project Overview
 
-**Project Name:** Amazon.com Product Recommendation System  
-**Project Date:** March 2022  
-**Team Members:** Maaz Khaled, Yahya Qureshi, Eman Tahir
+**Project Name:** Amazon.com Product Recommendation System   
+**Team Members:** Yahya Qureshi, Maaz Khaled, Eman Tahir
 
 ## Introduction
 
@@ -146,7 +145,3 @@ By undertaking this project, we have proven our technical prowess and dedication
 
 4. **Start the Web App:**
    Run the Flask application and access the frontend via `http://localhost:5000`.
-
----
-
-This README provides a comprehensive overview of your project, including technical details, impact, and instructions for future employers and collaborators.
