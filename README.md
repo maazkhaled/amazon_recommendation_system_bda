@@ -65,8 +65,8 @@ To enhance our recommendation system, we attempted to integrate detailed product
 
 ## Member Contributions
 
-- **Maaz Khaled & Eman Tahir:** Set up the Flask application, connected the server to the frontend interface, and developed the Kafka producer and consumer for real-time recommendation streaming.
 - **Yahya Qureshi:** Responsible for training the machine learning model used to generate user recommendations.
+- **Maaz Khaled & Eman Tahir:** Set up the Flask application, connected the server to the frontend interface, and developed the Kafka producer and consumer for real-time recommendation streaming.
 
 
 ### Lessons Learned
@@ -113,7 +113,7 @@ By undertaking this project, we have proven our technical prowess and dedication
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-repository-url
+   git clone https://github.com/your-repository-url](https://github.com/yayaq1/amazon_recommendation_system_bda/
    ```
 
 2. **Install dependencies:**
